@@ -1,0 +1,99 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 150vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-div {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 150vh;
+    width: 100%;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    width: 30%;
+
+}
+
+.box-top {
+    border-radius: 25px 25px 0 0;
+    background: rgb(229,93,255);
+    background: linear-gradient(90deg, rgba(229,93,255,1) 0%, rgba(97,9,121,1) 57%, rgba(97,9,121,0.8155856092436975) 100%);
+    grid-row: 4/10;
+    grid-column: 1/17;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-img {
+    border: 3px inset black;
+    border-radius: 50%;
+    grid-row: 2/7;
+    grid-column: 5/13;
+
+}
+
+.box-main {
+    border-radius: 0 0 25px 25px;
+    border: #0f1111 1px solid;
+    grid-row: 10/16;
+    grid-column: 1/17;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.box-text {
+    text-align: center;
+}
+
+.pretty-button {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 29px;
+    padding: 0 10px 0 11px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    width: 100px;
+    transition: .2s ease-in;
+}
+
+.pretty-button:hover {
+    background-color: #e55dff;
+    color: white;
+}
