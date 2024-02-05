@@ -5,8 +5,11 @@
 }
 
 body {
-    height: 150vh;
-    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -19,20 +22,31 @@ img {
 }
 
 .main-div {
+    margin-top: 20px;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     gap: 30px;
-    height: 150vh;
     width: 100%;
 }
 
 .box {
     display: grid;
     grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 25px);
     width: 30%;
 
+}
+
+.list-box {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    height: 150px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .box-top {
@@ -55,9 +69,27 @@ img {
 
 }
 
+.box-img-list {
+    height: 125px;
+    border: 3px inset black;
+    border-radius: 50%;
+    grid-row: 2/7;
+    grid-column: 5/13;
+}
+
 .box-main {
     border-radius: 0 0 25px 25px;
     border: #0f1111 1px solid;
+    grid-row: 10/16;
+    grid-column: 1/17;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.box-main-list {
     grid-row: 10/16;
     grid-column: 1/17;
     display: flex;
@@ -96,4 +128,15 @@ img {
 .pretty-button:hover {
     background-color: #e55dff;
     color: white;
+}
+
+
+.buttons-div {
+
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100px;
 }
