@@ -1,4 +1,3 @@
-
 import boxes from "/boxes.json" assert { type: "json" };
 
 const app = {};
