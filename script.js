@@ -9,7 +9,6 @@ app.init = () => {
     const listButton = document.querySelector('.list-button');
 
     const gridTemplate = box => {
-        console.log('clicked grid')
             let boxDiv = document.createElement('div');
             boxDiv.classList.add('box');
             boxDiv.innerHTML = `
@@ -29,7 +28,6 @@ app.init = () => {
     };
 
     const listTemplate = box => {
-        console.log('clicked list')
             let boxDiv = document.createElement('div');
             boxDiv.classList.add('list-box');
             boxDiv.innerHTML = `

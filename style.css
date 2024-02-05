@@ -23,6 +23,7 @@ img {
 
 .main-div {
     margin-top: 20px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -130,9 +131,8 @@ img {
     color: white;
 }
 
-
 .buttons-div {
-
+    margin-top: auto;
     width: 80%;
     display: flex;
     justify-content: center;
